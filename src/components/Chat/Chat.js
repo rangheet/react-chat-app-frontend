@@ -50,7 +50,6 @@ const Chat = ({location}) => {
         });
 
         socket.on('roomData', (roomInfo)=>{
-            console.log("useEffect", roomInfo.users);
             setUsers(roomInfo.users);
         });
     }, []);
@@ -64,7 +63,6 @@ const Chat = ({location}) => {
         }
     }
     
-    console.log("HEEYA",messages);
     return (
 
         <div className="outerContainer">
